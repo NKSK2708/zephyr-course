@@ -60,4 +60,10 @@ config BLINK_SLEEP_TIME_MS
     endif
   endif
 
+config APP_HEARTBEAT_PERIOD_MS
+  int "Heartbeat Period(100-2000)ms"
+  range 100 2000
+  default 500
+
+
 source "Kconfig.zephyr"
